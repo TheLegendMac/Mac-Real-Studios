@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Pure black background, rounded square for favicon -->
+  <rect width="100" height="100" rx="16" fill="#000000"/>
+
+  <!-- LEFT angle bracket < 
+       Looking at image: thin chevron, opens to the right,
+       positioned left of the M, vertically centered with M -->
+  <polyline
+    points="27,28 18,50 27,72"
+    fill="none" stroke="#FFFFFF" stroke-width="5.5"
+    stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- RIGHT angle bracket >
+       Mirror of left -->
+  <polyline
+    points="73,28 82,50 73,72"
+    fill="none" stroke="#FFFFFF" stroke-width="5.5"
+    stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- M shape:
+       Left post bottom -> left post top -> left peak -> valley -> right peak -> right post top -> right post bottom
+       Looking at image: M starts high, peaks are near the top,
+       valley is roughly center-height, posts extend below -->
+  <polyline
+    points="33,70 33,30 50,52 67,30 67,70"
+    fill="none" stroke="#FFFFFF" stroke-width="6"
+    stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cyan diamond at valley of M
+       Valley is at x=50, y=52 — diamond centered there -->
+  <polygon points="50,57 56,63 50,69 44,63" fill="#1EC8F5"/>
+</svg>
