@@ -203,6 +203,13 @@ nav {
   cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.25s;
 }
 .btn-ghost:hover { color: var(--white); border-color: var(--blue-300); background: rgba(43,114,255,0.08); }
+.hero-text-link {
+  font-family: var(--font-nav); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+  text-decoration: none; padding: 13px 8px; display: inline-block;
+  transition: color 0.2s;
+}
+.hero-text-link:hover { color: var(--blue-300); }
 .hero-scroll {
   position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 10px;
@@ -250,6 +257,24 @@ section { position: relative; z-index: 1; }
 .stagger-children.visible > *:nth-child(4) { transition-delay: 0.3s; opacity: 1; transform: none; }
 .stagger-children.visible > *:nth-child(5) { transition-delay: 0.4s; opacity: 1; transform: none; }
 .stagger-children.visible > *:nth-child(6) { transition-delay: 0.5s; opacity: 1; transform: none; }
+
+/* ── PROOF STRIP ── */
+.proof-strip {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 12px;
+  margin: 32px 0 0; padding: 18px 24px;
+  background: rgba(43,114,255,0.05); border: 1px solid var(--border-thin);
+  border-radius: 12px;
+}
+.proof-item {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.proof-item svg { color: #4fc877; flex-shrink: 0; }
+.proof-item a { color: var(--blue-300); text-decoration: none; }
+.proof-item a:hover { color: var(--cyan-300); }
+.proof-divider { width: 1px; height: 16px; background: var(--border-thin); flex-shrink: 0; }
+@media (max-width: 600px) { .proof-divider { display: none; } .proof-strip { flex-direction: column; align-items: flex-start; gap: 10px; } }
 
 /* ── ABOUT ── */
 .about { padding: 120px 0; }
@@ -506,7 +531,7 @@ footer::before { content: '<M>'; position: absolute; right: 40px; top: 50%; tran
   <p class="hero-sub">An independent studio building apps and digital tools that actually ship.</p>
   <div class="hero-actions">
     <a href="#products" class="btn-primary">See Our Work</a>
-    <a href="#about" class="btn-ghost">About the Studio</a>
+    <a href="#about" class="hero-text-link">About the Studio →</a>
   </div>
   <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
 </section>
@@ -519,6 +544,22 @@ footer::before { content: '<M>'; position: absolute; right: 40px; top: 50%; tran
     <div class="sec-label reveal">The Studio</div>
     <h2 class="sec-title reveal">Built to Build.</h2>
     <p class="sec-body reveal">Mac Real Studios is an independent software studio. No investors, no team of fifty, no sprints for the sake of sprints. Just focused work and products worth shipping.</p>
+    <div class="proof-strip reveal">
+      <div class="proof-item">
+        <svg viewBox="0 0 12 12" width="11" height="11"><polyline points="1,6 4,10 11,2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>1 app live on Google Play — <a href="https://play.google.com/store/apps/details?id=com.mactaylor.strobelight" target="_blank" rel="noopener noreferrer">download it now</a></span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <svg viewBox="0 0 12 12" width="11" height="11"><polyline points="1,6 4,10 11,2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>100% self-funded — no investors, no outside timeline</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <svg viewBox="0 0 12 12" width="11" height="11"><polyline points="1,6 4,10 11,2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Design, engineering &amp; publishing — all in-house</span>
+      </div>
+    </div>
     <div class="about-grid">
       <div class="about-pillars stagger-children reveal">
         <div class="pillar">
@@ -559,7 +600,7 @@ footer::before { content: '<M>'; position: absolute; right: 40px; top: 50%; tran
         <div class="stat-card">
           <div class="stat-num">&#8734;</div>
           <div class="stat-label">In Development</div>
-          <p class="stat-desc">More products in progress</p>
+          <p class="stat-desc">Productivity &amp; founder tools actively in progress</p>
         </div>
         <div class="stat-card wide">
           <div class="stat-num">100%</div>
@@ -634,7 +675,7 @@ footer::before { content: '<M>'; position: absolute; right: 40px; top: 50%; tran
             <div class="sc-icon">
               <svg viewBox="0 0 20 20" fill="none"><path d="M10 2L12 7H18L13.5 10.5L15.5 16L10 12.5L4.5 16L6.5 10.5L2 7H8L10 2Z" stroke="#F59E0B" stroke-width="1.4" stroke-linejoin="round"/></svg>
             </div>
-            <div><div class="sc-label">Night Safety</div><div class="sc-body">Be seen. Stay safe.<br>Walk &amp; run after dark.</div></div>
+            <div><div class="sc-label">Built For</div><div class="sc-body">Night runners &amp; walkers —<br>be visible, stay safe.</div></div>
           </div>
           <span class="product-platform">Wear OS &middot; Google Play</span>
         </div>
@@ -724,7 +765,7 @@ footer::before { content: '<M>'; position: absolute; right: 40px; top: 50%; tran
 <footer>
   <div class="footer-left">
     <div class="footer-logo">MAC REAL <span>STUDIOS</span></div>
-    <div class="footer-copy">&copy; 2025 Mac Real Studios. All rights reserved.</div>
+    <div class="footer-copy">&copy; 2026 Mac Real Studios. All rights reserved.</div>
   </div>
   <ul class="footer-links">
     <li><a href="#about">Studio</a></li>
