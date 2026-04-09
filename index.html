@@ -226,15 +226,6 @@ section{position:relative;z-index:1;}
 .m-pillar h4{font-family:var(--font-nav);font-size:clamp(11px,1.5vw,13px);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-300);margin-bottom:8px;}
 .m-pillar p{font-size:clamp(12px,1.5vw,13px);font-weight:300;color:var(--muted);line-height:1.7;}
 
-/* CREDIBILITY */
-.credibility{padding:clamp(64px,10vw,120px) 0;}
-.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px;}
-.cred-card{background:var(--navy-800);border:1px solid var(--border-thin);border-radius:14px;padding:clamp(20px,3.5vw,32px) clamp(18px,3vw,28px);transition:all 0.3s;}
-.cred-card:hover{border-color:var(--border-mid);box-shadow:var(--glow-blue);transform:translateY(-3px);}
-.cred-icon{width:38px;height:38px;background:rgba(43,114,255,0.1);border:1px solid var(--border-mid);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
-.cred-icon svg{width:17px;height:17px;stroke:var(--blue-300);fill:none;stroke-width:1.5;}
-.cred-card h4{font-family:var(--font-nav);font-size:clamp(12px,1.8vw,14px);font-weight:700;letter-spacing:0.06em;color:var(--white);margin-bottom:8px;}
-.cred-card p{font-size:clamp(11px,1.5vw,13px);font-weight:300;color:var(--muted);line-height:1.7;}
 
 /* CONTACT */
 .contact{padding:clamp(64px,10vw,120px) 0;background:linear-gradient(to bottom,transparent,rgba(12,21,37,0.5),transparent);}
@@ -266,7 +257,6 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
-  .cred-grid{grid-template-columns:1fr 1fr;}
 }
 @media(max-width:900px){
   :root{--nav-h:62px;}
@@ -282,7 +272,6 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
   .manifesto-pillars{grid-template-columns:1fr;}
   .m-pillar{border-right:none;border-bottom:1px solid var(--border-thin);}
   .m-pillar:last-child{border-bottom:none;}
-  .cred-grid{grid-template-columns:1fr 1fr;}
   footer{flex-direction:column;align-items:flex-start;}
   footer::before{display:none;}
 }
@@ -294,7 +283,6 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
   .proof-divider{display:none;}
   .about-stats{grid-template-columns:1fr 1fr;}
   .product-upcoming-grid{grid-template-columns:1fr;}
-  .cred-grid{grid-template-columns:1fr;}
   .cta-row{flex-direction:column;}
   .cta-row .btn-primary,.cta-row .btn-ghost{width:100%;}
   .products-header p{display:none;}
@@ -355,7 +343,7 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
   <div class="container">
     <div class="sec-label reveal">The Studio</div>
     <h2 class="sec-title reveal">Built from the gap.</h2>
-    <p class="sec-body reveal">Mac Real Studios is a fully independent software studio. The tools we build come from lived experience &mdash; from building things from the ground up without a roadmap, from failing forward, staying in it longer than made sense, and figuring it out anyway. We build for the person who is resourceful and self-directed but tired of software that talks down to them or buries the thing they actually need.</p>
+    <p class="sec-body reveal">Mac Real Studios is a fully independent software studio. The tools we build come from lived experience &mdash; from building things from the ground up without a roadmap, from failing forward, and figuring it out anyway. We build for people who are resourceful and self-directed but tired of software that talks down to them or buries the thing they actually need.</p>
 
     <div class="proof-strip reveal">
       <div class="proof-item">
@@ -409,17 +397,17 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
         <div class="stat-card">
           <div class="stat-num">01</div>
           <div class="stat-label">Live on Google Play</div>
-          <p class="stat-desc">Strobe Light For Watch &mdash; available now</p>
+          <p class="stat-desc">Strobe Light For Watch &mdash; live, downloadable, not a mockup</p>
         </div>
         <div class="stat-card">
           <div class="stat-num">&#8734;</div>
           <div class="stat-label">In Development</div>
-          <p class="stat-desc">Builder tools in active progress</p>
+          <p class="stat-desc">Builder tools for the gap between ambition and execution</p>
         </div>
         <div class="stat-card wide">
           <div class="stat-num">100%</div>
           <div class="stat-label">Independent</div>
-          <p class="stat-desc">Self-funded. No outside pressure. Accountable only to the quality of the work and the people using it.</p>
+          <p class="stat-desc">Self-funded. No outside pressure. Design, engineering, and publishing all in-house. Accountable only to the quality of the work.</p>
         </div>
       </div>
     </div>
@@ -444,7 +432,7 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
           <div>
             <div class="product-badge"><div class="product-badge-dot"></div>Live on Google Play</div>
             <h3 class="product-name">Strobe Light<br>For Watch</h3>
-            <p class="product-tagline">A strobe light for your Wear OS smartwatch. One tap, instant strobe &mdash; no phone needed, no setup, no friction.</p>
+            <p class="product-tagline">The first Mac Real Studios product &mdash; proof that focused software with a clear purpose ships. A strobe light for Wear OS: one tap, instant visibility, no friction.</p>
             <ul class="product-features">
               <li><div class="feat-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>Built natively for Wear OS &mdash; fast, lightweight, nothing extra</li>
               <li><div class="feat-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>Adjustable strobe frequency for any situation</li>
@@ -502,7 +490,7 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
         <div class="product-card-small">
           <span class="upcoming-label">In Development</span>
           <h4>Builder Tools</h4>
-          <p>Focused tools for people in the early-to-mid building phase &mdash; starting a project, launching something small, building a disciplined routine around a bigger goal.</p>
+          <p>Strobe Light proved we ship. What&rsquo;s next is built for the building phase &mdash; tools for people starting a project, launching something small, or trying to stay consistent with a bigger goal.</p>
         </div>
         <div class="product-card-small">
           <span class="upcoming-label">Coming Next</span>
@@ -537,48 +525,6 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
 
 <div class="divider"></div>
 
-<!-- CREDIBILITY -->
-<section class="credibility" id="credibility">
-  <div class="container">
-    <div class="sec-label reveal">Track Record</div>
-    <h2 class="sec-title reveal">Proof over promises.</h2>
-    <div class="cred-grid stagger-children reveal">
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h4>Live on Google Play</h4>
-        <p>Strobe Light For Watch is published and downloadable today. Not a mockup. Not a waitlist.</p>
-      </div>
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h4>Fully Independent</h4>
-        <p>No investors, no outside timeline. Every decision is made in service of the product, not a pitch deck.</p>
-      </div>
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-        <h4>End-to-End Ownership</h4>
-        <p>Design, engineering, and publishing all handled in-house.</p>
-      </div>
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h4>Built from Experience</h4>
-        <p>Built from the ground up &mdash; no roadmap, no shortcuts, just staying in it. The tools come from knowing what it actually feels like to start with nothing and build something real.</p>
-      </div>
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h4>More Coming</h4>
-        <p>Strobe Light is the first product, not the whole story. Builder tools for the gap between ambition and execution are in active development.</p>
-      </div>
-      <div class="cred-card">
-        <div class="cred-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h4>Privacy by Default</h4>
-        <p>Minimal permissions. No data selling. No surprise tracking. The privacy policy is short because there&rsquo;s not much to say.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="container">
@@ -586,9 +532,9 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
       <div class="sec-label">Get In Touch</div>
       <h2 class="sec-title">Let&rsquo;s talk.</h2>
       <div class="contact-cta-box">
-        <p>Open to freelance and contract work, technical collaboration, and licensing conversations. If you&rsquo;re evaluating what working together looks like &mdash; or you just want to see what&rsquo;s being built next &mdash; reach out directly.</p>
+        <p>Open to technical collaboration, licensing, and strategic partnerships. If you&rsquo;re evaluating what working together looks like &mdash; or you just want to see what&rsquo;s being built next &mdash; reach out directly.</p>
         <div class="cta-row">
-          <a href="mailto:macrealstudios@gmail.com" class="btn-primary" style="font-size:12px;">Email Us</a>
+          <a href="/cdn-cgi/l/email-protection#462b27253423272a353233222f293506212b272f2a6825292b" class="btn-primary" style="font-size:12px;">Email Us</a>
         </div>
       </div>
     </div>
@@ -609,7 +555,7 @@ footer::before{content:'<M>';position:absolute;right:40px;top:50%;transform:tran
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ── CONSTELLATION ──
 (function(){
   var c=document.getElementById('hero-canvas'),ctx=c.getContext('2d'),W,H,nodes=[],mouse={x:-999,y:-999};
@@ -645,7 +591,7 @@ window.addEventListener('scroll',function(){
 },{passive:true});
 
 // ── ACTIVE NAV ──
-var sectionIds=['about','products','ethos','credibility','contact'];
+var sectionIds=['about','products','ethos','contact'];
 var navAs=document.querySelectorAll('.nav-links a[data-section]');
 var secObs=new IntersectionObserver(function(entries){
   entries.forEach(function(e){
@@ -694,7 +640,7 @@ if(hb&&dr){
   });
 }
 // touch swipe to close
-document.addEventListener('touchstart',function(e){window._tY=e.touches[0].clientY;},{passive:true});
+document.addEventListener('touchstart',function(e){window._tY=e.touches[0].clientY;},{passive:true},{passive:true});
 if(dr){dr.addEventListener('touchmove',function(e){if(e.touches[0].clientY-window._tY>60)closeDrawer();},{passive:true});}
 </script>
 </body>
