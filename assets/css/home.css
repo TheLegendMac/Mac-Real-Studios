@@ -154,8 +154,12 @@ section{position:relative;z-index:1;}
 .feat-icon.amber{background:rgba(245,158,11,0.1);border-color:rgba(245,158,11,0.28);}
 .feat-icon.amber svg{stroke:#F59E0B;}
 .product-actions{display:flex;gap:10px;flex-wrap:wrap;}
-.btn-store{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-nav);font-size:clamp(10px,1.4vw,12px);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:linear-gradient(135deg,var(--blue-500),var(--blue-400));color:var(--white);text-decoration:none;padding:11px clamp(14px,2.5vw,22px);border-radius:8px;transition:all 0.3s;box-shadow:0 0 20px rgba(43,114,255,0.25);white-space:nowrap;}
-.btn-store svg{width:13px;height:13px;fill:currentColor;}
+.btn-store{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-nav);font-size:clamp(10px,1.4vw,12px);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:linear-gradient(135deg,var(--blue-500),var(--blue-400));color:var(--white);text-decoration:none;padding:11px clamp(14px,2.5vw,22px);border-radius:8px;transition:all 0.3s;box-shadow:0 0 20px rgba(43,114,255,0.25);white-space:nowrap;}
+.btn-store svg{width:18px;height:18px;flex-shrink:0;display:block;}
+.btn-store .play-blue{fill:#5B98FF;}
+.btn-store .play-green{fill:#4FC877;}
+.btn-store .play-yellow{fill:#FFD166;}
+.btn-store .play-red{fill:#FF6B6B;}
 .btn-store:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(43,114,255,0.5);}
 
 /* PRODUCT VISUAL */
@@ -212,7 +216,7 @@ section{position:relative;z-index:1;}
 
 /* CONTACT */
 .contact{padding:clamp(64px,10vw,120px) 0;background:linear-gradient(to bottom,transparent,rgba(12,21,37,0.5),transparent);}
-.contact-inner{max-width:640px;}
+.contact-inner{max-width:640px;margin:0 auto;}
 .contact-cta-box{background:var(--navy-800);border:1px solid var(--border-mid);border-radius:22px;padding:clamp(28px,5vw,56px) clamp(24px,5vw,52px);margin-top:44px;position:relative;overflow:hidden;}
 .contact-cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--blue-400),transparent);}
 .contact-cta-box::after{content:'';position:absolute;bottom:-80px;right:-80px;width:200px;height:200px;background:radial-gradient(ellipse,rgba(43,114,255,0.09),transparent 65%);pointer-events:none;}
