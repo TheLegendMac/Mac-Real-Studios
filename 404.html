@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050912">
+<meta name="robots" content="noindex">
+<title>Page Not Found — Mac Real Studios</title>
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Syne:wght@800&family=Outfit:wght@300&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:#050912;color:#E8F0FF;font-family:'Outfit',sans-serif;font-weight:300;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative;overflow:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(43,114,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(43,114,255,0.025) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;}
+.glow{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(700px,90vw);height:min(700px,90vw);background:radial-gradient(ellipse,rgba(43,114,255,0.10) 0%,transparent 65%);pointer-events:none;}
+main{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;}
+.logo{height:72px;mix-blend-mode:screen;filter:brightness(1.05);margin-bottom:28px;}
+.eyebrow{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:#5B98FF;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:20px;height:1px;background:#2B72FF;}
+h1{font-family:'Syne',sans-serif;font-size:clamp(64px,16vw,140px);font-weight:800;line-height:1;letter-spacing:-0.03em;background:linear-gradient(135deg,#5B98FF,#22D4F4);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px;}
+p{font-size:clamp(14px,2.5vw,17px);color:#7A96B8;line-height:1.8;max-width:420px;margin-bottom:36px;}
+.btn{font-family:'Rajdhani',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;background:linear-gradient(135deg,#1A5CF5,#2B72FF);color:#E8F0FF;text-decoration:none;padding:14px 32px;border-radius:8px;display:inline-flex;align-items:center;box-shadow:0 0 30px rgba(43,114,255,0.3);transition:transform 0.25s,box-shadow 0.25s;}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 50px rgba(43,114,255,0.45);}
+footer{position:absolute;bottom:24px;left:0;right:0;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#4A6090;z-index:1;}
+@media(prefers-reduced-motion:reduce){.btn:hover{transform:none;}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<main>
+  <img class="logo" src="/assets/images/smalllogomrs.png" alt="Mac Real Studios" width="636" height="330">
+  <div class="eyebrow">Lost in the Void</div>
+  <h1>404</h1>
+  <p>This page doesn&rsquo;t exist &mdash; or it moved somewhere more intentional. Let&rsquo;s get you back on track.</p>
+  <a href="/" class="btn">Back to Home</a>
+</main>
+<footer>Mac Real Studios</footer>
+</body>
+</html>

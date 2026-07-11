@@ -2,7 +2,7 @@
 
 Static website for Mac Real Studios, deployed with GitHub Pages.
 
-Website: https://thelegendmac.github.io/Mac-Real-Studios/
+Website: https://macrealstudios.com
 
 ## Project Structure
 
